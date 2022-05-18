@@ -4,7 +4,11 @@ module.exports = {
     './components/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        board: "url('/board.png')",
+      },
+    },
   },
   plugins: [require('tailwindcss-textshadow')],
 };
