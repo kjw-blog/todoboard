@@ -44,7 +44,7 @@ export default function Board() {
 
   return (
     <>
-      <div className="relative w-[25%] min-w-[480px] p-10 pt-20 space-y-2 select-none min-h-[72.5%] max-h-[72.5%] bg-board bg-cover">
+      <div className="rounded-md shadow-xl relative w-[25%] min-w-[480px] p-10 pt-20 space-y-2 select-none min-h-[72.5%] max-h-[72.5%] bg-board bg-cover">
         <div className="overflow-y-scroll scrollbar-hide h-full w-full">
           <ul className="grid transition-all grid-cols-1 justify-start space-y-5 items-start">
             {postList.length > 0 &&
@@ -83,7 +83,7 @@ export default function Board() {
       <input
         type="text"
         onKeyPress={insert}
-        className="outline-none border-l-[25px] min-w-[480px]  border-l-yellow-300 bg-yellow-200 w-[25%] h-12 px-4 text-gray-500 font-bold text-sm transition-all focus:shadow-hover focus:rounded-br-hover shadow-post hover:shadow-hover rounded-br-post hover:rounded-br-hover"
+        className="outline-none border-l-[25px] min-w-[480px]  border-l-yellow-300 bg-yellow-200 w-[25%] h-12 px-4 text-gray-500 font-bold text-sm duration-500 transition-all focus:shadow-hover focus:rounded-br-hover shadow-post hover:shadow-hover rounded-br-post hover:rounded-br-hover"
       />
     </>
   );

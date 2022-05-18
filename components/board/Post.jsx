@@ -47,7 +47,7 @@ export default function Post({
     <>
       <li
         onClick={deletePost}
-        className="border-l-[25px] z-50 border-l-yellow-300 flex items-center overflow-hidden bg-yellow-200 h-12  px-4 text-gray-500 font-bold text-sm transition-all focus:shadow-hover focus:rounded-br-hover shadow-post hover:shadow-hover rounded-br-post hover:rounded-br-hover"
+        className="border-l-[25px] z-50 border-l-yellow-300 flex items-center overflow-hidden duration-500 bg-yellow-200 h-12  px-4 text-gray-500 font-bold text-sm transition-all focus:shadow-hover focus:rounded-br-hover shadow-post hover:shadow-hover rounded-br-post hover:rounded-br-hover"
       >
         {text.slice(0, text.lastIndexOf('_'))}
       </li>
